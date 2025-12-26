@@ -1,0 +1,9 @@
+Opal encrypted format for Unix version 1
+Threefish extensions
+
+version 1 parameters
+The rounds parameter specifies the number of rounds.
+The size parameter specifies the size of a block in bits (256, 512, or 1024).
+The nonce paremeter stores a nonce block.
+The keycheck paremeter stores an encrypted null block.
+

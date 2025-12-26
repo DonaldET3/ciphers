@@ -1,0 +1,5 @@
+Even Mansour Tiny Encryption Algorithm
+algorithm description
+
+This algorithm is a single-key Even-Mansour scheme that uses the Tiny Encryption Algorithm as an unkeyed permutation between the two applications of the key.
+

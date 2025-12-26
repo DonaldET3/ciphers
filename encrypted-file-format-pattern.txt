@@ -1,0 +1,23 @@
+Opal encrypted file format pattern for Unix
+version 1
+written by DonaldET3 in April 2022
+
+The file name extension may be "ouenc".
+
+file header
+"OUencrypted" + null byte
+version byte
+endianness byte ("b" or "l")
+
+Parameters are specified as a series of name-value pairs. Each name or value has a byte indicating its length. The length is the byte value plus one. A name consisting of a single null byte indicates the end of the parameter list and has no subsequent value.
+
+There may be multiple ways to specify parameters for a particular cipher, so after the cipher type parameter, there should be a version parameter for the parameter style used.
+
+There may be multiple "mode" parameters indicating block cipher modes. The data is encrypted with the modes in the order that they are recorded.
+
+The "nonce" parameter should store the nonce or initialization vector.
+
+The "keycheck" paremeter should store some encrypted null bytes to allow the key to be verified.
+
+If the data is encrypted with a block cipher, the end of the data in the last block is indicated by a single set bit followed by clear bits filling the rest of the block.
+

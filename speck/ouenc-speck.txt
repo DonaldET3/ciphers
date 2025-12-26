@@ -1,0 +1,10 @@
+Opal encrypted format for Unix version 1
+Speck extensions
+
+version 1 parameters
+The rounds parameter specifies the number of rounds.
+The blocksize parameter specifies the block size in bits.
+The keysize parameter specifies the key size in bits.
+The nonce paremeter stores a 1 block nonce.
+The keycheck paremeter stores an encrypted null block.
+

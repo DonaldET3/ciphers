@@ -1,0 +1,9 @@
+Opal encrypted format for Unix version 1
+EMTEA extensions
+
+version 1 parameters
+The rounds parameter specifies the number of rounds.
+The size parameter specifies the size of a block in bits.
+The nonce paremeter stores a 1 block nonce.
+The keycheck paremeter stores an encrypted null block.
+
