@@ -1,0 +1,5 @@
+Opal encrypted format for Unix version 1
+MD6 extensions
+
+version 1 parameters
+

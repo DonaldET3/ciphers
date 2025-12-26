@@ -1,0 +1,5 @@
+Opal encrypted format for Unix version 1
+BLAKE extensions
+
+version 1 parameters
+
